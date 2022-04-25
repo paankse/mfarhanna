@@ -651,12 +651,12 @@ footer a:hover {
    margin: 0.5rem 0.5rem 0 0;
 }
 
-.contact-page .contact-frame {
+.contact-page .contact-frame form {
    display: flex;
    flex-direction: column;
 }
 
-.contact-page .contact-frame input {
+.contact-page .contact-frame form input {
    font-family: var(--main-font);
    width: var(--contact-input-w);
    height: var(--contact-input-h);
@@ -667,11 +667,11 @@ footer a:hover {
    transition: 0.5s;
 }
 
-.contact-page .contact-frame input:focus {
+.contact-page .contact-frame form input:focus {
    border: 0.1rem solid black;
 }
 
-.contact-page .contact-frame textarea {
+.contact-page .contact-frame form textarea {
    font-family: var(--main-font);
    height: var(--contact-input-h);
    padding: var(--padding-normal);
@@ -683,15 +683,15 @@ footer a:hover {
    transition: 0.5s;
 }
 
-.contact-page .contact-frame textarea:focus {
+.contact-page .contact-frame form textarea:focus {
    border: 0.1rem solid black;
 }
 
-.contact-page .contact-frame h1 span {
+.contact-page .contact-frame form h1 span {
    color: var(--logo-red);
 }
 
-.contact-page .contact-frame .button {
+.contact-page .contact-frame form .submit-btn {
    color: white;
    background-color: var(--logo-red);
    font-size: var(--text-h1);
@@ -701,13 +701,14 @@ footer a:hover {
    text-decoration: none;
    transition: 0.5s;
    width: 10vw;
+   height: auto;
    text-align: center;
    padding: var(--padding-normal);
    margin-left: auto;
    overflow: hidden;
 }
 
-.contact-page .contact-frame .button:hover {
+.contact-page .contact-frame form .submit-btn:hover {
    color: var(--logo-red);
    background-color: white;
    border-style: solid;
