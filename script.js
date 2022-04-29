@@ -1,5 +1,8 @@
-function morefunc() {
-   var dgbatch2 = document.querySelector(".masonry-grid .batch2");
-   var morebtn = document.getElementsByClassName("more-btn");
-   dgbatch2.style.display = "inline";
+function show() {
+   // console.log("show");
+   document.getElementById("menu-frame").style.display = "flex";
+}
+
+function hide() {
+   document.getElementById("menu-frame").style.display = "none";
 }
