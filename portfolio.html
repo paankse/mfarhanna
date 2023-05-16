@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="css/secondary.css" />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+         <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="
+               position: fixed;
+               top: 20px;
+               left: 20px;
+               z-index: 1044;
+               border-radius: 14px;
+               background: #ffffff;
+               box-shadow: 11px 11px 19px #e6e6e6, -11px -11px 19px #ffffff;
+            "
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                     <div class="container-fluid p-0 my-3">
+                        <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                     </div>
+                     <a
+                        href="index.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Home</a
+                     >
+                     <a
+                        href="about.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Information</a
+                     >
+                     <a
+                        href="portfolio.html"
+                        class="fs-3 main-font text-dark text-decoration-none my-2"
+                        >Portfolio</a
+                     >
+                     <a
+                        href="service.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Service</a
+                     >
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+            </div>
+
+            <div
+               class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-center"
+            >
+               <div class="container-fluid p-0 m-0 text-center">
+                  <div class="container-fluid p-0 m-0 my-5 text-center">
+                     <h1 class="sec-font text-primary">UX Design</h1>
+                  </div>
+               </div>
+
+               <div
+                  class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center"
+               >
+                  <a
+                     href="portfolio/factory-subcont.html"
+                     class="card m-3 col-xxl-5 text-decoration-none text-dark"
+                  >
+                     <div class="row g-0">
+                        <div class="col-md-7">
+                           <img
+                              src="assets/portfolio/1_mgt_subcont/preview2.png"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                           />
+                        </div>
+                        <div class="col-md-5">
+                           <div class="card-body">
+                              <h5 class="card-title p-1">
+                                 Factory Sub-cont Management
+                              </h5>
+                              <p class="card-text">
+                                 Role : Entire product conception and design
+                              </p>
+                              <p class="card-text">
+                                 Client: HR Safety Section of Manufacturing
+                                 Factory
+                              </p>
+                              <p class="card-text">
+                                 Sector: Safety, Factory Management,
+                                 Sustainability
+                              </p>
+
+                              <p class="card-text">
+                                 <small class="text-muted"
+                                    >2023 - Real Case</small
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a
+                     href="portfolio/product-identification.html"
+                     class="card m-3 col-xxl-5 text-decoration-none text-dark"
+                  >
+                     <div class="row g-0">
+                        <div class="col-md-7">
+                           <img
+                              src="assets/portfolio/2_sign_ok/mockup.png"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                           />
+                        </div>
+                        <div class="col-md-5">
+                           <div class="card-body">
+                              <h5 class="card-title p-1">
+                                 Product Identification
+                              </h5>
+                              <p class="card-text">
+                                 Role : Entire product conception and design
+                              </p>
+                              <p class="card-text">
+                                 Client: Quality Control in Factory (Same with
+                                 Sub-cont Management)
+                              </p>
+                              <p class="card-text">
+                                 Sector: Quality Production
+                              </p>
+
+                              <p class="card-text">
+                                 <small class="text-muted"
+                                    >2023 - Real Case</small
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a
+                     href="portfolio/vidio.com-expand.html"
+                     class="card m-3 col-xxl-5 text-decoration-none text-dark"
+                  >
+                     <div class="row g-0">
+                        <div class="col-md-7">
+                           <img
+                              src="assets/portfolio/3. vidio.com/mockup_port_3.png"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                           />
+                        </div>
+                        <div class="col-md-5">
+                           <div class="card-body">
+                              <h5 class="card-title p-1">
+                                 Vidio.com Expansion
+                              </h5>
+                              <p class="card-text">Role : UX/UI Designer</p>
+                              <p class="card-text">
+                                 Case : UX Designer Job Opening (Case Test)
+                              </p>
+                              <p class="card-text">Sector: Entertainment</p>
+
+                              <p class="card-text">
+                                 <small class="text-muted"
+                                    >2023 - Job application</small
+                                 >
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="container-fluid m-0 p-5">
+               <p>Copyright 2023 - Updated April 2023</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Javascript Plugin -->
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>

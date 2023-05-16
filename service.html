@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="css/secondary.css" />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+
+      <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="position: fixed; top: 20px; left: 20px; z-index: 1044; border-radius: 14px;
+            background: #ffffff;
+            box-shadow:  11px 11px 19px #e6e6e6,
+                         -11px -11px 19px #ffffff;"
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                     <div class="container-fluid p-0 my-3">
+                        <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                     </div>
+                     <a
+                        href="index.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Home</a
+                     >
+                     <a
+                        href="about.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Information</a
+                     >
+                     <a
+                        href="portfolio.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Portfolio</a
+                     >
+                     <a
+                        href="service.html"
+                        class="fs-3 main-font text-dark text-decoration-none my-2"
+                        >My Service</a
+                     >
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+               <div class="container-fluid p-0 m-0 text-center">
+                  
+                  <div class="container-fluid p-0 m-0 my-5 text-center">
+                     <h1 class="sec-font text-primary p-1">Web Design</h1>
+                  </div>
+
+                  
+                  
+                  
+                  
+                  <div class="container-fluid py-5 my-5 d-flex flex-column justify-content-center align-items-center shadow">
+                     <div class="container-fluid mx-0 mt-3 px-3 p-0">
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="assets/img/inv mock 3.png" alt="Gallery image 1" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--2">
+                              <img src="assets/img/inv mock 5.png" alt="Gallery image 2" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--3">
+                              <img src="assets/img/inv mock 7.png" alt="Gallery image 3" class="gallery__img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div class="container-fluid p-0 m-0 text-center">
+                        <h3 class="sec-font p-1">Wedding Invitation</h3>
+                        <p class="sec-font">Price start from IDR.250.000</p>                     
+                     </div>
+
+                     <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-dark px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              More Information
+                           </button>
+                        </a>
+                     </div>
+                     <!-- <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="https://wa.link/hj98tk" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              Order via whatsapp
+                           </button>
+                        </a>
+                        <a href="https://www.fiverr.com/share/21b6r4" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              Order via Fiverr
+                           </button>
+                        </a>
+                        <a href="https://shopee.co.id/product/31486315/23009089963/" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              Order via Shopee
+                           </button>
+                        </a>
+                     </div> -->
+                        
+
+                  </div>
+                  
+                  
+               </div>
+
+               <div class="container-fluid p-0 m-0 text-center">
+                  
+                  <div class="container-fluid p-0 m-0 my-5 text-center">
+                     <h1 class="sec-font text-primary p-1">Design Stuff</h1>
+                  </div>
+
+                  
+                  
+                  
+                  
+                  <div class="container-fluid py-5 my-5 d-flex flex-column justify-content-center align-items-center shadow">
+                     <div class="container-fluid mx-0 mt-3 px-3 p-0">
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="assets/img/lowtrace2.jpg" alt="Gallery image 1" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--2">
+                              <img src="assets/img/lowtrace1.jpg" alt="Gallery image 2" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--3">
+                              <img src="assets/img/lowtrace3.jpg" alt="Gallery image 3" class="gallery__img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div class="container-fluid p-0 m-0 text-center">
+                        <h3 class="sec-font p-1">Potrait Lo-Trace Art</h3>
+                        <p class="sec-font">Price start from IDR.75.000</p>                     
+                     </div>
+
+                     <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-dark px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              More Information
+                           </button>
+                        </a>
+                     </div>
+
+                        <!-- <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                           <a href="https://wa.link/60tjow" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via whatsapp
+                              </button>
+                           </a>
+                           <a href="https://www.fiverr.com/share/21b6r4" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Fiverr
+                              </button>
+                           </a>
+                           <a href="https://shopee.co.id/product/31486315/23009089963/" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Shopee
+                              </button>
+                           </a>
+                        </div> -->
+                        
+
+                  </div>
+                  
+                  <div class="container-fluid py-5 my-5 d-flex flex-column justify-content-center align-items-center shadow">
+                     <div class="container-fluid mx-0 mt-3 px-3 p-0">
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="assets/img/wpap 1.jpg" alt="Gallery image 1" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--2">
+                              <img src="assets/img/wpap 2.jpg" alt="Gallery image 2" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--3">
+                              <img src="assets/img/wpap 3.jpg" alt="Gallery image 3" class="gallery__img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div class="container-fluid p-0 m-0 text-center">
+                        <h3 class="sec-font p-1">Potrait WPAP Art</h3>
+                        <p class="sec-font">Price start from IDR.75.000</p>                     
+                     </div>
+
+                     <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-dark px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              More Information
+                           </button>
+                        </a>
+                     </div>
+
+                        <!-- <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                           <a href="https://wa.link/fuy7kx" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via whatsapp
+                              </button>
+                           </a>
+                           <a href="https://www.fiverr.com/share/5NYvR3" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Fiverr
+                              </button>
+                           </a>
+                           <a href="https://shopee.co.id/product/31486315/23009089963/" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Shopee
+                              </button>
+                           </a>
+                        </div> -->
+                        
+                        
+                  </div>
+
+
+                  <div class="container-fluid py-5 my-5 d-flex flex-column justify-content-center align-items-center shadow">
+                     <div class="container-fluid mx-0 mt-3 px-3 p-0">
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="assets/img/logo 8.jpg" alt="Gallery image 1" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--2">
+                              <img src="assets/img/logo 10.jpg" alt="Gallery image 2" class="gallery__img">
+                           </figure>
+                           <figure class="gallery__item gallery__item--3">
+                              <img src="assets/img/logo 24.jpg" alt="Gallery image 3" class="gallery__img">
+                           </figure>
+                        </div>
+                     </div>
+                     <div class="container-fluid p-0 m-0 text-center">
+                        <h3 class="sec-font p-1">Logo Design</h3>
+                        <p class="sec-font">Price start from IDR.150.000</p>                     
+                     </div>
+
+                     <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none m-1">
+                           <button class="btn-secondary text-center fs-6 text-dark px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                              More Information
+                           </button>
+                        </a>
+                     </div>
+
+                        <!-- <div class="container-fluid p-0 m-0 d-flex flex-wrap justify-content-center align-items-center">
+                           <a href="https://wa.link/5n4kep" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via whatsapp
+                              </button>
+                           </a>
+                           <a href="https://www.fiverr.com/share/5NYvR3" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Fiverr
+                              </button>
+                           </a>
+                           <a href="https://shopee.co.id/product/31486315/23009089963/" class="text-decoration-none m-1">
+                              <button class="btn-secondary text-center fs-6 text-primary px-2 py-1 mx-0 my-2 rounded-3 border-dark">
+                                 Order via Shopee
+                              </button>
+                           </a>
+                        </div> -->
+                        
+                        
+                  </div>
+              
+            </div>
+            <!-- Footer -->
+            <div class="container-fluid m-0 p-5">
+               <p>Copyright 2023 - Updated April 2023</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Javascript Plugin -->
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>

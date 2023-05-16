@@ -1,0 +1,13 @@
+// Variable Customized
+/* --bg: #fefef6; */
+/* --border : #bc9863 */
+/* --title-text: #bc9d68 */
+/* --normal-text: #46443f */
+$primary: #c60c0d; //As Title Text
+$secondary: #ffffff; //As Background
+$dark: #1e1e1e; //As Normal Text
+$light: #dcdcdc;
+$offcanvas-vertical-height: 90vh;
+
+// import bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="css/secondary.css" />
+      <link rel="stylesheet" href="css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+         <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="
+               position: fixed;
+               top: 20px;
+               left: 20px;
+               z-index: 1044;
+               border-radius: 14px;
+               background: #ffffff;
+               box-shadow: 11px 11px 19px #e6e6e6, -11px -11px 19px #ffffff;
+            "
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                     <div class="container-fluid p-0 my-3">
+                        <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                     </div>
+                     <a
+                        href="index.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Home</a
+                     >
+                     <a
+                        href="about.html"
+                        class="fs-3 main-font text-dark text-decoration-none my-2"
+                        >My Information</a
+                     >
+                     <a
+                        href="portfolio.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Portfolio</a
+                     >
+                     <a
+                        href="service.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Service</a
+                     >
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+
+               <!-- Photo Galery -->
+               <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+               >
+                  <div
+                     id="carouselExampleSlidesOnly"
+                     class="carousel slide"
+                     data-bs-ride="carousel"
+                  >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                              src="assets/img/Profile/profile.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                              style="height: 40vh; width: auto"
+                           />
+                        </div>
+                        <!-- <div class="carousel-item">
+                           <img
+                              src="assets/img/Profile/2.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                           />
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Greeting -->
+               <div class="container-fluid">
+                  <h1 class="_sec-font text-dark" style="overflow: hidden">
+                     Hi fellas!
+                  </h1>
+                  <p class="_sec-font fs-5 text-dark">
+                     You can call me Farhan.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     I am an Engineer basically, Educated in mechatronics and
+                     automation engineering. But I have always been influenced
+                     by the design world, especially digital design. With that
+                     passion, I enjoy doing some work in design.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     To fulfill my heart to make that passion the main career.
+                     Currently, I'm on training Google UX Designer to sharpen my
+                     skill in designing digital stuff. After taking this big new
+                     journey in my life, I plan to become a UX/UI designer.
+                     Having an engineering background makes me easily understand
+                     the technology's main process. so I can learn and fastly
+                     adapt to the new career role.
+                  </p>
+               </div>
+
+               <!-- Short Bio -->
+               <div class="container-fluid _sec-font text-dark">
+                  <h1 class="_sec-font text-dark my-3" style="overflow: hidden">
+                     Short Biography
+                  </h1>
+                  <p class="_sec-font fs-5 text-dark">Born : November 1996</p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Living : Bekasi - Bandung, West Java, Indonesia , SEA.
+                  </p>
+               </div>
+
+               <!-- Work -->
+               <div class="container-fluid _sec-font text-dark">
+                  <h1 class="_sec-font text-dark my-3" style="overflow: hidden">
+                     Education
+                  </h1>
+                  <div class="edu-container">
+                     <div class="edu-container__line"></div>
+                     <ul class="edu-container__items">
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    src="assets/img/Experiences Logo/smkn13bdg.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title _sec-font">
+                                 <p class="_sec-font fs-5 text-dark">
+                                    SMKN 13 Bandung
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="_sec-font fs-6 text-dark">
+                                 2012 - 2015 | Computer Network
+                              </p>
+                           </div>
+                        </li>
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    src="assets/img/Experiences Logo/polman.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="_sec-font fs-5 text-dark">
+                                    Politeknik Manufaktur Bandung
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="_sec-font fs-6 text-dark">
+                                 2015 - 2018 | Automation and Mechatronics
+                              </p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <br />
+                  <h1 class="_sec-font text-dark my-3" style="overflow: hidden">
+                     Work Experiences
+                  </h1>
+                  <div class="edu-container">
+                     <div class="edu-container__line"></div>
+                     <ul class="edu-container__items">
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    src="assets/img/Experiences Logo/peruri.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="_sec-font fs-5 text-dark">
+                                    PERUM PERURI
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="_sec-font fs-6 text-dark">
+                                 Nov 2014 - Feb 2015 | Intern | Pengamanan
+                                 Elektronik
+                              </p>
+                              <p class="text-dark _sec-font fs-6">
+                                 Intern as electronic devices such as CCTV and
+                                 automated sliding for the confidential room.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    src="assets/img/Experiences Logo/mbw.jfif"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="_sec-font fs-5 text-dark">
+                                    PT. Melu Bangun Wiweka
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="_sec-font fs-6 text-dark">
+                                 Mar 2017 - Dec 2017 | Intern | Electrical
+                                 Engineer
+                              </p>
+                              <p class="text-dark _sec-font fs-6">
+                                 involved in the electrical design team with the
+                                 part listing, electrical wiring diagram
+                                 drawing, electrical wiring, and PLC
+                                 programming.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    class="big"
+                                    src="assets/img/Experiences Logo/omelette.jpg"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="text-dark _sec-font fs-5`">
+                                    Omelette Bandung
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="text-dark _sec-font fs-6`">
+                                 Sep 2017 - Now | Self Employed | Graphic
+                                 Designer
+                              </p>
+                              <p class="text-dark _sec-font fs-6`">
+                                 Offering digital design services such as logo,
+                                 company business card, portfolio, banner,
+                                 marketing staff, portrait art. detail:
+                                 Instagram: omelettebdg
+                              </p>
+                           </div>
+                        </li>
+                        <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    class="big"
+                                    src="assets/img/Experiences Logo/nsk.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="text-dark _sec-font fs-5`">
+                                    PT. NSK Bearings Manufacturing
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="text-dark _sec-font fs-6`">
+                                 Jul 2019 - Now | Full Time | Production
+                                 Engineering Specialist
+                              </p>
+                              <p class="text-dark _sec-font fs-6`">
+                                 Delegated as Auto Visual System Staff Role.
+                                 Developing machines to substitute manual
+                                 inspection workpieces by a human. Construct
+                                 Mechanical, Electrical, Machine Operation
+                                 Program, and Image Processing Programming.
+                                 Conduct Machine installation procedure to the
+                                 production line. Research new algorithms that
+                                 enhance inspection capability. Maintain
+                                 Engineering Problem.
+                              </p>
+                              <p class="text-dark _sec-font fs-6`">
+                                 Involved in improvement digitalization system
+                                 in the company, developing a few work tool
+                                 web-based, designing a web or an app for solve
+                                 specific technical or managerial problems.
+                              </p>
+                           </div>
+                        </li>
+                        <!-- <li class="edu-container__item">
+                           <div class="edu-container__top">
+                              <div class="edu-container__circle">
+                                 <img
+                                    src="assets/img/Experiences Logo/google.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="edu-container__title">
+                                 <p class="text-dark _sec-font fs-5`">
+                                    UX Designer
+                                    <a
+                                       href="https://www.credly.com/badges/01ac4ae5-df95-41b2-a3d8-3ad0bfc6b9b2/linked_in_profile"
+                                       >(Certified)</a
+                                    >
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="edu-container__desc">
+                              <p class="text-dark _sec-font fs-6`">
+                                 Jan 2022 - Apr 2023 | Google - Coursera |
+                                 Course and Certification
+                              </p>
+                              <p class="text-dark _sec-font fs-6`">
+                                 This is a new path in my life for making a big
+                                 decision for living my passion as a designer.
+                                 Becoming a UX and UI designer is the new
+                                 carrier that I dreamed of.
+                              </p>
+                           </div>
+                        </li> -->
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- SKills Set -->
+               <div class="container-fluid _sec-font text-dark my-3">
+                  <h1 class="_sec-font text-dark" style="overflow: hidden">
+                     Skills
+                  </h1>
+
+                  <p class="_sec-font fs-5 text-dark m-0 mt-2">Languanges :</p>
+                  <em class="_sec-font fs-5 text-dark">
+                     Bahasa (Native), English (College Level)
+                  </em>
+                  <p class="_sec-font fs-5 text-dark m-0 mt-2">Office :</p>
+                  <em class="_sec-font fs-5 text-dark">
+                     Microsoft Office (Excel, Word, PPT, Access, Outlook)
+                  </em>
+                  <p class="_sec-font fs-5 text-dark m-0 mt-2">
+                     Mechatronics :
+                  </p>
+                  <em class="_sec-font fs-5 text-dark">
+                     Programmable Logic Controller, Rule Base Image Processing -
+                     going to AI based vision machine, Flexible Manufacturing
+                     System, Microcontroller Programming, System Development,
+                     Electrical Design, Mechanical Drawing, Manufacturing
+                     Process
+                  </em>
+                  <p class="_sec-font fs-5 text-dark m-0 mt-2">
+                     Design and Tech:
+                  </p>
+                  <em class="_sec-font fs-5 text-dark">
+                     UI/UX Design, Procreate, Illustrator, Corel Draw, Adobe XD,
+                     Figma, Web Design, HTML, CSS, JavaScript, Bootstrap,
+                     Python, Arduino, NI LabView
+                  </em>
+               </div>
+
+               <!-- Certification -->
+               <div class="container-fluid _sec-font text-dark my-3">
+                  <h1 class="_sec-font text-dark" style="overflow: hidden">
+                     Certification
+                  </h1>
+                  <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                     - Coursera – Google: UX Designer |
+                     <a
+                        href="https://www.credly.com/badges/01ac4ae5-df95-41b2-a3d8-3ad0bfc6b9b2/linked_in_profile"
+                        >(Certified)</a
+                     >
+                  </p>
+                  <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                     - PLC Programming Contest | Siemens “Integrated Automation”
+                     – 2014
+                  </p>
+                  <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                     - Kontes Robot Indonesia | Autonomous Soccer Robot
+                     Competition – 2019
+                  </p>
+               </div>
+
+               <!-- All Link to Secmed and Files -->
+               <div class="container-fluid _sec-font text-dark my-3">
+                  <div
+                     class="container-fluid p-0 m-0 mt-3 d-flex flex-column justify-content-center align-items-start"
+                  >
+                     <h1 class="_sec-font text-dark" style="overflow: hidden">
+                        Get In Touch
+                     </h1>
+
+                     <a
+                        href="https://www.instagram.com/paankse/"
+                        class="text-decoration-none my-2 d-flex justify-content-center align-items-center"
+                     >
+                        <i class="uil uil-instagram text-primary fs-3"></i>
+                        <p class="fs-5 text-dark m-0 _sec-font ms-2">paankse</p>
+                     </a>
+                     <a
+                        href="https://www.linkedin.com/in/mfarhanna/"
+                        class="text-decoration-none my-2 d-flex justify-content-center align-items-center"
+                     >
+                        <i class="uil uil-linkedin text-primary fs-3"></i>
+                        <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                           Muhamad Farhan Noor Adabi
+                        </p>
+                     </a>
+                     <a
+                        href="mailto: farhan05111996@gmail.com?subject = Hello Farhan = Message"
+                        class="text-decoration-none my-2 d-flex justify-content-center align-items-center"
+                     >
+                        <i class="uil uil-envelopes text-primary fs-3"></i>
+                        <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                           farhan05111996@gmail.com
+                        </p>
+                     </a>
+                     <a
+                        href="assets/doc/UX_RESUME_M_FARHAN_N_A_APR23.pdf"
+                        target="_blank"
+                        class="text-decoration-none my-2 d-flex justify-content-center align-items-center"
+                     >
+                        <i class="uil uil-document-info text-primary fs-3"></i>
+                        <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                           Resume - Updated, April 2023
+                        </p>
+                     </a>
+                     <a
+                        href="assets/doc/UX_CV FARHAN APR23.pdf"
+                        target="_blank"
+                        class="text-decoration-none my-2 d-flex justify-content-center align-items-center"
+                     >
+                        <i
+                           class="uil uil-file-exclamation-alt text-primary fs-3"
+                        ></i>
+                        <p class="fs-5 text-dark m-0 _sec-font ms-2">
+                           CV - Updated, April 2023
+                        </p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- Footer -->
+            <div class="container-fluid m-0 p-5">
+               <p>Copyright 2023 - Updated April 2023</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Javascript Plugin -->
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>
