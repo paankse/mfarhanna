@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Sans:wght@300&display=swap");
+
+:root {
+   /* Fonts */
+   --main-font: "Lora", serif;
+   --sec-font: "Noto Sans", sans-serif;
+}
+
+.text-responsive {
+   font-size: calc(100% + 1vw + 1vh);
+}
+
+._h-full {
+   height: 100vh;
+}
+
+._main-font {
+   font-family: var(--main-font);
+}
+._sec-font {
+   font-family: var(--sec-font);
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+   position: relative;
+   -webkit-animation-name: animatebottom;
+   -webkit-animation-duration: 1s;
+   animation-name: animatebottom;
+   animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+   from {
+      bottom: -100px;
+      opacity: 0;
+   }
+   to {
+      bottom: 0px;
+      opacity: 1;
+   }
+}
+
+@keyframes animatebottom {
+   from {
+      bottom: -100px;
+      opacity: 0;
+   }
+   to {
+      bottom: 0;
+      opacity: 1;
+   }
+}
+
+/* Loading Page */
+._load-page {
+   height: 100vh;
+   width: 100vw;
+   text-align: center;
+   display: block;
+   z-index: 9000;
+}
+
+.lds-ripple {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+}
+.lds-ripple div {
+   position: absolute;
+   border: 4px solid #c60c0d;
+   opacity: 1;
+   border-radius: 50%;
+   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+   animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+   0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+   4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+   5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+   }
+   100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+   }
+}
+
+/* animation transition */
+.reveal {
+   position: relative;
+   transform: translateY(50px);
+   opacity: 0;
+
+   transition: all 1s ease;
+   overflow: hidden;
+}
+
+.reveal.reveal-active {
+   position: static;
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.container-pp {
+   position: relative;
+   overflow: hidden;
+   width: 60%;
+   padding-top: 87%;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-pp {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#work1 {
+   height: 30vh;
+   width: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/work1/omelette.JPG);
+}
+#work2 {
+   height: 30vh;
+   width: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/work2/antelope.JPG);
+}
+#work3 {
+   height: 30vh;
+   width: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/work3/SubWay.png);
+}
+#work4 {
+   height: 30vh;
+   width: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/work4/illus.png);
+}
+
+#_lowtrace1 {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 40%;
+   background-image: url(../assets/img/lowtrace2.jpg);
+}
+#_lowtrace2 {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/lowtrace1.jpg);
+}
+#_lowtrace3 {
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   background-image: url(../assets/img/lowtrace3.jpg);
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(8, 5vw);
+   grid-gap: 0.5rem;
+}
+
+.gallery__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.gallery__item--1 {
+   grid-column-start: 1;
+   grid-column-end: 5;
+   grid-row-start: 1;
+   grid-row-end: 9;
+
+   /** Alternative Syntax **/
+   /* grid-column: 1 / span 2;  */
+   /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+   grid-column-start: 5;
+   grid-column-end: 9;
+   grid-row-start: 1;
+   grid-row-end: 5;
+
+   /** Alternative Syntax **/
+   /* grid-column: 3 / span 2;  */
+   /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+   grid-column-start: 5;
+   grid-column-end: 9;
+   grid-row-start: 5;
+   grid-row-end: 9;
+
+   /** Alternative Syntax **/
+   /* grid-column: 5 / span 4;
+   grid-row: 1 / span 5; */
+}
