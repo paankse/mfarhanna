@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="../css/secondary.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+         <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="
+               position: fixed;
+               top: 20px;
+               left: 20px;
+               z-index: 1044;
+               border-radius: 14px;
+               background: #ffffff;
+               box-shadow: 11px 11px 19px #e6e6e6, -11px -11px 19px #ffffff;
+            "
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                     <div class="container-fluid p-0 my-3">
+                        <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                     </div>
+                     <a
+                        href="../index.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Home</a
+                     >
+                     <a
+                        href="../about.html"
+                        class="fs-3 main-font text-dark text-decoration-none my-2"
+                        >My Information</a
+                     >
+                     <a
+                        href="../portfolio.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Portfolio</a
+                     >
+                     <a
+                        href="../service.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Service</a
+                     >
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="../assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+
+               <!-- Photo Galery -->
+               <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+               >
+                  <div
+                     id="carouselExampleSlidesOnly"
+                     class="carousel slide"
+                     data-bs-ride="carousel"
+                  >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                              src="../assets/portfolio/3. vidio.com/mockup_port_3.png"
+                              class="d-block w-100"
+                              alt="..."
+                              style="height: auto; width: auto"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Greeting -->
+               <div class="container-fluid">
+                  <h1 class="_sec-font text-dark my-5" style="overflow: hidden">
+                     Vidio.com Content Expansion
+                  </h1>
+
+                  <table class="table">
+                     <tbody>
+                       <tr>
+                         <td>Client</td>
+                         <td>Quality Control in Factory (Same with Sub-cont Management)</td>
+                       </tr>
+                       <tr>
+                         <td>Sector</td>
+                         <td>Quality Production</td>
+                       </tr>
+                       <tr>
+                         <td>My Role</td>
+                         <td>Entire product conception and design</td>
+                       </tr>
+                       <tr>
+                         <!-- <th scope="row">4</th> -->
+                         <td>Project Time</td>
+                         <td>5 days -> 2 days (cause of my busy time)</td>
+                       </tr>
+                     </tbody>
+                   </table>
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Disclaimer   :   This project is part of my application as UX designer at Vidio.com at April 2023 
+                     <br>
+                     <br>
+                     
+                  <p class="_sec-font fs-5 text-dark">
+                     Vidio.com, a leading online streaming platform, is planning an exciting expansion into the realms of audio streaming, e-concerts, e-seminars, and podcasts. As a UX designer work applicant, I have been tasked with creating a design proposal to ensure a smooth and engaging user experience for Vidio.com audience during this expansion.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     The scope of this project involves designing UX and UI elements for web and mobile applications that will host audio streaming, e-concerts, e-seminars, and podcasts. The goal is to create a user-friendly and visually appealing design that will captivate users while ensuring easy navigation and usability.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     The proposed design will consider factors such as information architecture, interaction design, visual design, and usability, with the aim of addressing user needs and optimizing content discovery and engagement. Collaboration with cross-functional teams will be essential to align with business objectives and technical feasibility.
+                     </p>
+                  <p class="_sec-font fs-5 text-dark">
+                        As a UX designer, I am excited to contribute to Vidio.com expansion plan and help shape the future of their audio streaming, e-concerts, e-seminars, and podcast offerings. I look forward to presenting a comprehensive design proposal that delivers a compelling and seamless user experience to Vidio.com audience.
+                  </p>
+                  
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/Vidio Home.JPG"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                 
+                  
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learn The Case
+
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     The expansion plan of Vidio.com into audio streaming, e-concerts, e-seminars, and podcasts may pose some risks in terms of changing the image and perception of Vidio.com in the minds of its users. Vidio.com has been well-established as a TV and movie streaming platform, and some users may have a strong sense of consistency and perception that associates Vidio.com solely with TV shows and movies. Introducing new types of content such as audio streaming, e-concerts, e-seminars, and podcasts may require careful consideration of how to maintain the existing brand image while also offering new experiences to users. It will be important to communicate the expansion plan clearly to users and provide a seamless transition to ensure that the changes do not disrupt the user experience or negatively impact the perception of Vidio.com as a trusted platform. Proper UX and UI design will play a crucial role in maintaining user engagement and satisfaction during this expansion plan.
+
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     To ensure a smooth expansion, it would be best to design the UX and UI for the new content types, such as audio streaming, e-concerts, e-seminars, and podcasts, in a way that is similar to how users currently explore TV shows and movies on Vidio.com. This can include familiar navigation, search functionality, and personalized recommendations. Consistency in design and layout will help users quickly adapt to the new content types and reinforce Vidio.com's brand. Considering the preferences of the current user base and gathering feedback during the design process can also ensure a user-friendly experience. In summary, creating a similar content exploration experience and aligning with Vidio.com's brand identity will help the expansion plan go smoothly and keep users engaged.
+
+                  </p>
+                  
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     a Slight of Quick Research
+                  </h3>
+                  
+                  
+                  <p class="_sec-font fs-5 text-dark">
+                     When conducting competitor research for Vidio.com's expansion plan, it may be challenging as competitors may have specialized platforms focused on one content type. In this case, it's important to identify key success factors and best practices from competitors in the broader online entertainment industry. Additionally, gathering feedback from Vidio.com's existing user base can provide insights on their preferences. By considering both the industry and user preferences, the competitor research can provide relevant insights to inform the design of a successful user experience for the expanded content offerings.
+
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/goto.JPG"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/spotify.JPG"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/veeps.JPG"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Emphasize the user
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     I get some useful points of view that are helped by the AI chatbot, and I use that data to develop some imitate of personas. To make a clear user understanding I divide the persona into 3 classifications which are:
+                  </p>
+
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">TV User</li>
+                     <li class="list-group-item border-0">Mobile Phone</li>
+                     <li class="list-group-item border-0">Desktop User</li>
+                  </ol>
+
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/Azkiya Persona.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/Tisha Persona.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/Lynn Persona.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Concepting
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     At Vidio.com, we are constantly working on improving our platform to provide the best user experience. As part of our expansion plans, we have introduced new features that aim to make navigation and content exploration easier for our users.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     One of the key areas of focus is the organization and categorization of content. We have revamped our content classification system to ensure that it is easy to read and understand. Each content type, such as dramas, movies, podcasts, music, cooking tutorials, parenting seminars, and more, will have its own dedicated section, clearly labeled and easily accessible from the main navigation menu.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Inside each content type section, we have implemented a user-friendly interface that provides infinite suggestions for further exploration. Users will be able to scroll through a wide range of content options, with diverse genres, themes, and topics, giving them ample opportunities to explore and discover new content that matches their interests and preferences.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     The content explores pages will be designed with a clean and visually appealing layout, making it easy for users to browse through the available options. Content will be categorized based on different classifications, such as genre, popularity, ratings, release date, and more, providing users with multiple ways to sort and filter content to suit their preferences.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     To enhance the content exploration experience, we will also implement personalized recommendations based on user's viewing history, interests, and preferences. This will enable users to discover content that is tailored to their tastes, further enhancing their engagement with the platform.                     
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Overall, our aim is to create a seamless and enjoyable content exploration experience for our users, with easy navigation, clear content classification, and infinite suggestions for further exploration. We want to provide our users with a rich and diverse content library, accessible at their fingertips, and make it easy for them to find and explore content that they love on Vidio.com.
+                  </p>
+
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Prototyping and Hi-Fi
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     I am not making the full cycle on the HI-Fi prototype. The main idea of mine is how we could serve the new content and future to the user by creating the open-up exploration page and classification.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     But here is the hi-fi link on Figma to show you.
+                  </p>
+                  <a href="https://www.figma.com/proto/U3JQTEwoz1nq3xd2CpMr0t/VIdio.com-Expansion?node-id=2-3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A3">
+                     <p class="_sec-font fs-5 text-danger">
+                        But here is the hi-fi link on Figma to show you.
+                     </p>
+                  </a>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/3. vidio.com/hifi.JPG"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                     
+ 
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Iterating
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     As we continue to refine and iterate on the expansion of Vidio.com, we are focused on enhancing the user's interaction with changing content classifications. Through user feedback and data analysis, we are constantly improving the navigation and organization of content types to make it easy for users to find their desired content.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     One key aspect of our approach is to leverage personalized recommendations. By using data-driven algorithms, we aim to provide relevant content suggestions based on the user's interests, viewing history, and preferences. This allows users to discover new content that aligns with their interests and viewing habits, creating a more personalized experience.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     Furthermore, we are continuously monitoring and analyzing user interactions with the content explore pages. This includes tracking how users engage with different content categories, how they scroll and explore content, and what type of content they are most interested in. This iterative process allows us to optimize the design and layout of the content explore pages to ensure they are user-friendly, visually appealing, and effective in presenting a wide variety of content options.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     Through these iterative improvements, we aim to create a seamless and personalized content exploration experience for users on Vidio.com, enabling them to easily find and engage with their desired content while discovering new and interesting content along the way.
+                  </p>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     What Next?
+
+                  </h3>
+
+
+                  <p class="_sec-font fs-5 text-dark">
+                     As part of Vidio.com expansion plan, we will closely monitor and analyze the adoption and engagement of the new features by both existing and new users on Vidio.com. Through data-driven analytics and metrics, we will track the usage patterns and behaviors of users who interact with the new features, including e-concerts, e-seminars, podcasts, and other content types.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     We will gather data on the number of users who actively engage with the new features, such as the frequency and duration of their usage, the content types they prefer, and any feedback or comments they provide. This data will be crucial in understanding the level of user adoption and satisfaction with the new features.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     Additionally, we will also track the acquisition of new users who are specifically drawn to Vidio.com due to the availability of the new features. This will involve analyzing user acquisition channels, conversion rates, and user retention rates to assess the effectiveness of our marketing efforts and the appeal of the new features to potential users.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     Based on the insights gathered from these data-driven analytics, we will continually optimize the new features and their presentation on the platform to ensure maximum user engagement and satisfaction. This iterative process will allow us to make data-informed decisions and continually improve the user experience on Vidio.com, driving increased adoption and engagement with the new features among both existing and new users.
+                  </p>
+
+                  
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Conclusion
+
+                  </h3>
+
+
+                  <p class="_sec-font fs-5 text-dark">
+                     In conclusion, as we embark on this short project to introduce new features on Vidio.com, it is crucial to prioritize the consistency and recognition of these features as belonging to Vidio.com. Ensuring that the new features are seamlessly integrated into the existing platform, with easy navigation and clear content classification, will be key to providing a user-friendly experience.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     By carefully monitoring and analyzing user engagement and feedback, we can continuously iterate and optimize the new features to meet user expectations and preferences. Additionally, understanding how users find their desired content and personalizing recommendations will further enhance user satisfaction and retention.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     As we move forward with this expansion plan, we will keep a keen eye on user adoption and feedback, making data-driven decisions to continually improve the user experience on Vidio.com. By maintaining consistency and ease of recognition, we can successfully introduce and integrate the new features into Vidio.com, driving increased engagement and satisfaction among our users.
+                  </p>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learnings
+
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+                     Consistency goes beyond just the visual appearance of the new features. It encompasses the entire user experience, including navigation, content classification, and overall functionality. Ensuring that the new features align with the existing Vidio.com platform and provide a seamless experience for both existing and new users is crucial.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Consistency in user experience builds trust and familiarity, which leads to increased user engagement and loyalty. When users can easily understand and navigate the new features, they are more likely to explore and interact with the content, resulting in a positive user experience.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     As you've noted, consistency is not limited to the visual elements, but also extends to the overall experience and the way content is presented and organized. This includes maintaining consistency in content recommendations, personalized suggestions, and search functionality, among others. By providing a consistent and familiar experience across all sub-content, Vidio.com can enhance user satisfaction and retention.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     Continuously learning from user feedback and iteratively improving the new features based on data and user behavior will be key to maintaining consistency and ensuring a positive user experience for all users, both existing and new.
+                  </p>
+
+
+               </div>
+               
+               
+               
+               <div class="container-fluid my-5 p-0">
+                  <a href="../portfolio.html" class="text-decoration-none fs-5 text-primary">Back to Portfolio Page</a>
+               </div>
+               
+               <!-- Footer -->
+               <div class="container-fluid m-0 p-0">
+                  <p>Copyright 2023 - Updated March 2023</p>
+               </div>
+            </div>
+         </div>
+         
+         <!-- Javascript Plugin -->
+         <!-- JQuery -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+      type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="../js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>

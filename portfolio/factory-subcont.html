@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="../css/secondary.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+         <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="
+               position: fixed;
+               top: 20px;
+               left: 20px;
+               z-index: 1044;
+               border-radius: 14px;
+               background: #ffffff;
+               box-shadow: 11px 11px 19px #e6e6e6, -11px -11px 19px #ffffff;
+            "
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                  <div class="container-fluid p-0 my-3">
+                     <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                  </div>
+                  <a
+                     href="../index.html"
+                     class="fs-3 main-font text-primary text-decoration-none my-2"
+                     >Home</a
+                  >
+                  <a
+                     href="../about.html"
+                     class="fs-3 main-font text-dark text-decoration-none my-2"
+                     >My Information</a
+                  >
+                  <a
+                     href="../portfolio.html"
+                     class="fs-3 main-font text-primary text-decoration-none my-2"
+                     >Portfolio</a
+                  >
+                  <a
+                     href="../service.html"
+                     class="fs-3 main-font text-primary text-decoration-none my-2"
+                     >My Service</a
+                  >
+               </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="../assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+
+               <!-- Photo Galery -->
+               <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+               >
+                  <div
+                     id="carouselExampleSlidesOnly"
+                     class="carousel slide"
+                     data-bs-ride="carousel"
+                  >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                              src="../assets/portfolio/1_mgt_subcont/preview2.jpeg"
+                              class="d-block w-100"
+                              alt="..."
+                              style="height: auto; width: auto"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Greeting -->
+               <div class="container-fluid">
+                  <h1 class="_sec-font text-dark my-5" style="overflow: hidden">
+                     Sub-cont Management
+                  </h1>
+
+                  <table class="table">
+                     <tbody>
+                       <tr>
+                         <td>Client</td>
+                         <td>HR Safety Section of Manufacturing Factory</td>
+                       </tr>
+                       <tr>
+                         <td>Sector</td>
+                         <td>Safety, Factory Management, Sustainability</td>
+                       </tr>
+                       <tr>
+                         <td>My Role</td>
+                         <td>Entire product conception and design</td>
+                       </tr>
+                       <tr>
+                         <!-- <th scope="row">4</th> -->
+                         <td>Project Time</td>
+                         <td>6 months</td>
+                       </tr>
+                     </tbody>
+                   </table>
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Disclaimer   :   Based on the agreement I will not expose the factory name. 
+                     <br>
+                     <br>
+
+                     A Factory is usually a cooperation with a third-party company or what we called it a “sub-contractor” to work a specific job on their site. That job generally did by the sub-cont by request from the factory and they are paid for it.
+                     As an HR safety section, they have a responsibility to make sure that the sub-cont and the sub-cont user have a safe work environment. The main goal of is current system let’s say it “conventional system” to control the sub-cont work is have a lot of critical shortcomings both for the sub-cont itself and also for the factory. And they hope I can suggest to them how to implement it digitally and solve the shortcoming of the “conventional system”.
+                  </p>
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learn The Case
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+                     The first step I took of course how can understand what and why they need to step up the conventional system into what they imagined it should be.
+                  </p>
+
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">This company still uses paper and writing on the pen as data collected</li>
+                     <li class="list-group-item border-0">There is no powerful ERP that handles company administration</li>
+                     <li class="list-group-item border-0">All the digital data is handled by spreadsheet (not well organized)</li>
+                     <li class="list-group-item border-0">So that is why everyone in the company is not used to working on ERP (centralized data)</li>
+                     <li class="list-group-item border-0">And then that’s why, to make approval of something should be done by a manual stamp on the paper</li>
+                     <li class="list-group-item border-0">Every related system is done by using unresolved and uncentralized spreadsheet data</li>
+                     <li class="list-group-item border-0">Not all the involved people, sections, or company proficient in tech devices</li>
+                   </ol>
+
+
+                  <p class="_sec-font fs-5 text-dark">
+                     After that, I learned specifically about the conventional system that they use to control the sub-cont work control. Let me show you the flow of how it works.
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                     <div
+                        id="carouselExampleSlidesOnly"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                     >
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <img
+                                 src="../assets/portfolio/1_mgt_subcont/conventional methode flow chart.png"
+                                 class="d-block w-100"
+                                 alt="..."
+                                 style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <p class="_sec-font fs-5 text-dark">
+                     This conventional system is based on the client's explanation and I thought there is some lack or it should be designed better.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Based on the client’s explanation :
+                  </p>
+
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">A lot of paper should be prepared</li>
+                     <li class="list-group-item border-0">Need a long time to get a work permission</li>
+                     <li class="list-group-item border-0">The sub-cont user is not reporting the completed work report</li>
+                     <li class="list-group-item border-0">They cannot identify the sub cont worker’s personnel (There are possibility the unregistered person could enter the factory without permission)</li>
+                     <li class="list-group-item border-0">They can’t know if every person who still works is entering and leaving the factory</li>
+                     <li class="list-group-item border-0">They can’t handle if there any urgent work is needed</li>
+                     <li class="list-group-item border-0">They need to concern of some special sork category such as height work, fire work, high voltage work, and heavy load work</li>
+                   </ol>
+                   
+                   
+                   <p class="_sec-font fs-5 text-dark">
+                      Based on what I learned
+                     </p>
+                     <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                        <li class="list-group-item border-0">The way they handle the mandatory document, regulation and the knowledge about why and how we work technically with sub cont is not explained from the beginning (of course there are NDA and agreements in business)</li>
+                        <li class="list-group-item border-0">All the paper from the conventional system I agree it is needed as proof that the work is well planned so we can’t remove or reduce it.</li>
+                        <li class="list-group-item border-0">The user which uses the sub-cont service does not feel that they should report the completed work to the HR safety team “Why we should report it?”. It means the regulation is not clear and did not bind every subject involved.</li>
+                        <li class="list-group-item border-0">It not only answers the question of “How we make it digital or centralized data?” but “How we create the appropriate system?”. It not only talks about technology but also talk about factory culture.</li>
+                      </ol>
+                      <p class="_sec-font fs-5 text-dark">
+                         What should we do now? Yes, we need more data. To know better and to make a convincing problem statement, I construct the interview question for the involved part of the factory and interviewed the involved section:
+                     </p>
+                     <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                        <li class="list-group-item border-0">HR - The safety specialist is the man in charge who run this system</li>
+                        <li class="list-group-item border-0">Third-Party Company (as a team)</li>
+                        <li class="list-group-item border-0">User (Who uses third-party service)</li>
+                        <li class="list-group-item border-0">Budget controller (Project Manager) - Save for later</li>
+                        <li class="list-group-item border-0">Security (gate guard)</li>
+                     </ol>
+                     <p class="_sec-font fs-5 text-dark">
+                        To get a representative sight I ask for a multi-layer level position in every involved section.
+                     </p>
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Findings from Interview and Surveys
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+                     In General
+                  </p>
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">Complicated and Unclear regulation for sub-cont work permit system (Every involved section does not feel that sub-cont work permit is really needed and well managed for factory benefit)</li>
+                     <li class="list-group-item border-0">Diversity of the job (There are no general or standardized work levels, difficulties, and work scopes for every sub cont, The work permit system should accommodate all of it in the same easy way)</li>
+                     <li class="list-group-item border-0">Technology Aversion (Not all the involved sections have the same curiosity and have the skill to work with computers. How to make it super easy to use is the key point to make it guaranteed that will be used in all the involved sections)</li>
+                  </ol>
+                  <p class="_sec-font fs-5 text-dark">
+                     As an HR Safety Section :
+                  </p>
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">As the main responsible section to allow the third-party company works in the factory, They want to make sure that everything is under control, which means all the needed information, skills, planning, and preparation for the job are carefully planned.</li>
+                     <li class="list-group-item border-0">Minimize work accident possibilities as much as possible. Work accidents will be the most avoided thing in this system. That's why every work permit request needs to be checked carefully.</li>
+                     <li class="list-group-item border-0">Manage every work permit which is requested of them, as a backup or traceable archive.</li>
+                  </ol>
+                  <p class="_sec-font fs-5 text-dark">
+                     As a Subcont Service User :
+                  </p>
+                     <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                        <li class="list-group-item border-0">As the work permit requester, They need an easy way in filling the detailed data about the work, the category, and what they need to consider about the job.</li>
+                        <li class="list-group-item border-0">As the requester also, they want a short process to get a work permit (current flow needs 3 days)</li>
+                        <li class="list-group-item border-0">As the sub-cont service user, after they get the permit, they need to show the document on the working area as a piece of information about the job for everyone in the factory. On the current system, they need to bring a lot of paper to the site and place it on the mobile information board which is impractical.</li>
+                     </ol>
+                     <p class="_sec-font fs-5 text-dark">
+                        As a Security :
+                        <br>
+                        As the gatekeeping, they want to make sure that every person entering the factory is registered and has a clear reason “What they will do here?”, “How long they will come here?”, “Who is the responsible person for them?”. So they can feel tranquil when allowing the sub-cont member to enter the factory.
+                     </p>
+                     <p class="_sec-font fs-5 text-dark">
+                        As a Sub-cont company :
+                     </p>
+                     <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                        <li class="list-group-item border-0">Collaborating with the user of their service must be easy to communicate with, even with their member. We have to make it clear any reduced miscommunication with the sub-cont manager, leader, safety man, or member.</li>
+                        <li class="list-group-item border-0">We can’t deal with unofficial work, or if it is any urgent work and needs sub-cont help, it needs a clear special regulation and agreement. </li>
+                     </ol>
+                     <p class="_sec-font fs-5 text-dark">
+                        After I get all the data, I realize that my scope is getting bigger. Suggest the factory review its agreement with the sub-cont company.
+                     </p>
+                     <h3 class= text-dark text-primary pt-5 pb-4" style="overflow: hidden">
+                        Compiling the empathy
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        From the collected data, I make 4 group targets which represented the main involved section for a better understanding of the user. They are Tomy as an HR safety officer (6 years experience), Reno as a Project Engineer Staff (4 years experience), Candra as a Security member (12 years), and Budi as a Sub-cont manager (15 years experience). After that analyze their journey maps for a better understanding of their feelings when doing the work permit relating job.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/persona Tomy.PNG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/persona Reno.PNG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/persona candra.PNG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/persona Budi.PNG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <h3 class= text-dark text-primary pt-5 pb-4" style="overflow: hidden">
+                        Cultivate Strong Roots of the concept
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        I realized that this project has a wide scope, deep range, and long journey to reach the expected goals. In the first step, I need to divide the implementation into some phases.
+                        By using the impact and effort matrix I grouped the ideas to make it easier to define each phase or stage and then create the new flow diagram for the new system.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/Impact + Effort.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/New Method Flowchart.PNG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <p class="_sec-font fs-5 text-dark">
+                        Direction
+                     </p>
+                     <p class="_sec-font fs-5 text-dark">
+                        To make it easier based on the compiled empathy data, I want to make it growable and have a flowing process. Creating the 1 cycle job model and the role-based menu will be used by me to build the light effort user experience. Because we need a lot of space and a lot of cycle flow, so I decide to use a vertical navigation pattern. I decided to use the Hybrid IA model, which is combined of some IA models consisting of hierarchy, sequential, and networked IA models. After that, here is the sitemap of the new system.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/Information Architecture.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                        Wireframing, Prototyping & Usability-Testing
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        Because I work by myself in this process, I create the wireframe digitally to create the web structure and make it clickable to test the usability of the user.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/Prototype.JPG"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/User journey.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                        Mood Board plus Design System
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        Finally, let’s begin to give some color and piled up the vision of our system. Applying the factory culture will be the best option for smoothing the system transition.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/Mood Board - 1.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/Mood Board - 2.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     
+
+                     <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                        Iterating
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        After testing the prototype, there are some great suggestions from the user. Redesign the wireframe and test it again to the user for double check and make it more and more perfect.
+                     </p>
+
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/iteration dashboard.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div
+                     class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                     >
+                        <div
+                           id="carouselExampleSlidesOnly"
+                           class="carousel slide"
+                           data-bs-ride="carousel"
+                        >
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <img
+                                    src="../assets/portfolio/1_mgt_subcont/iteration attendance.png"
+                                    class="d-block w-100"
+                                    alt="..."
+                                    style="height: auto; width: auto"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                        What Next?
+                     </h3>
+                     <p class="_sec-font fs-5 text-dark">
+                        After iterating, we have to hand over this design to the web developer to make it go live. Because of developing this system using another company sub-cont of the factory and the progress seems not started yet. I can’t take the real data to encounter if my solution solves their problem. To measure it I plan some questions to answer.
+                     </p>
+                     <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                        <li class="list-group-item border-0">What time cycle to finish a task of each role?</li>
+                        <li class="list-group-item border-0">How many papers are decreased?</li>
+                        <li class="list-group-item border-0">How much task completion by the user?</li>
+                        <li class="list-group-item border-0">How many unregistered people still enter the factory area?</li>
+                        <li class="list-group-item border-0">How many finished work reports are assigned to HR?</li>
+                        <li class="list-group-item border-0">How much illegal work is still conducted?</li>
+                        <li class="list-group-item border-0">What side effects are felt by each role?</li>
+                        <li class="list-group-item border-0">How many next systems are stimulated to become digitalized?</li>
+                     </ol>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Conclusion
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+                     Sometimes advanced technology not always is an option for helping human jobs, but how we implement the technology and make them easily communicate with people is the most important. In this case, I learn how to find the meeting point between people's needs and technology. Understanding the need is the most consuming time in this case. But because of that, I could position myself if I am as my user and doing their job relating to this system.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Realizing that, I have to push my design idealism when I built a solution for the problem. User front and center mindset is not only about the fiture of the system, or the UI design, and accessibility, but also talks about conditional technology user. We have to think about forced or unforced users when using our solution.
+                  </p>
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learnings
+                  </h3>
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">Emphasize is the key to getting the right direction, a little offset will cause a big misunderstanding in the end</li>
+                     <li class="list-group-item border-0">Advanced technology is not always become the right answer</li>
+                     <li class="list-group-item border-0">Creating a multi-user role system needs a lot of consideration than usual cases.</li>
+                     <li class="list-group-item border-0">Push my ego and design idealism to build the proper solution for my client.</li>
+                     <li class="list-group-item border-0">No competitive audit makes me thinks freely when designing the system</li>
+                  </ol>
+               </div>
+
+               
+               
+               <div class="container-fluid my-5 p-0">
+                  <a href="../portfolio.html" class="text-decoration-none fs-5 text-primary">Back to Portfolio Page</a>
+               </div>
+               
+               <!-- Footer -->
+               <div class="container-fluid m-0 p-0">
+                  <p>Copyright 2023 - Updated March 2023</p>
+               </div>
+         </div>
+      </div>
+
+      <!-- Javascript Plugin -->
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="../js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../css/main.css" />
+
+      <!-- Customized CSS -->
+      <link rel="stylesheet" href="../css/secondary.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+
+      <!-- Unicons Scouticon -->
+      <link
+         rel="stylesheet"
+         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+
+      <link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
+
+      <title>M Farhan N A</title>
+   </head>
+
+   <body onload="myFunction()" class="bg-secondary">
+      <!-- Loading Page -->
+      <div id="loader" class="container-fluid _load-page bg-secondary">
+         <div
+            class="container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+         >
+            <div class="lds-ripple">
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main DIV -->
+      <div
+         class="container-fluid animate-bottom p-0 m-0 overflow-hidden bg-secondary"
+         id="myDiv"
+         style="display: none"
+      >
+         <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            style="
+               position: fixed;
+               top: 20px;
+               left: 20px;
+               z-index: 1044;
+               border-radius: 14px;
+               background: #ffffff;
+               box-shadow: 11px 11px 19px #e6e6e6, -11px -11px 19px #ffffff;
+            "
+         >
+            <i class="uil uil-ellipsis-h fs-3"></i>
+         </button>
+
+         <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+         >
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                  Paankse
+               </h5>
+               <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+               ></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container-fluid p-0 m-0 animate-right" id="menu">
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-center align-items-start py-5"
+                  >
+                     <div class="container-fluid p-0 my-3">
+                        <p class="fs-6 _sec-font" style="color: gray">Menu</p>
+                     </div>
+                     <a
+                        href="../index.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Home</a
+                     >
+                     <a
+                        href="../about.html"
+                        class="fs-3 main-font text-dark text-decoration-none my-2"
+                        >My Information</a
+                     >
+                     <a
+                        href="../portfolio.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >Portfolio</a
+                     >
+                     <a
+                        href="../service.html"
+                        class="fs-3 main-font text-primary text-decoration-none my-2"
+                        >My Service</a
+                     >
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center py-2"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           Say hello!
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="https://www.instagram.com/paankse/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-instagram"></i
+                        ></a>
+                        <a
+                           href="mailto:farhan05111996@gmail.com"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-envelope"></i
+                        ></a>
+                        <a
+                           href="https://wa.me/6285860285380?text=Hello%20Farhan%2C%20can%20you%20help%20me%3F"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-whatsapp"></i
+                        ></a>
+                        <a
+                           href="https://www.linkedin.com/in/mfarhanna/"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-linkedin"></i
+                        ></a>
+                        <a
+                           href="https://www.behance.net/muhamadfarhan6"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-behance"></i
+                        ></a>
+                        <a
+                           href="https://dribbble.com/paankse"
+                           class="text-decoration-none m-2"
+                           style="font-size: 2rem"
+                           ><i class="uil uil-dribbble"></i
+                        ></a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid d-flex flex-column justify-content-start align-content-center pt-2 pb-5"
+                  >
+                     <div class="container-fluid p-0 mt-3 mb-0">
+                        <p class="fs-6 sec-font" style="color: gray">
+                           My Store
+                        </p>
+                     </div>
+                     <div
+                        class="container-fluid d-flex flex-wrap justify-content-start align-content-center p-0 m-0"
+                     >
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Fiverr
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Shopee
+                        </a>
+                        <a
+                           href="#"
+                           class="text-decoration-none m-2"
+                           style="font-size: 1rem"
+                           >Etsy
+                        </a>
+                     </div>
+                  </div>
+                  <div
+                     class="container-fluid p-0 m-0 d-flex flex-column justify-content-center align-items-end"
+                  >
+                     <h5 class="sec-font text-primary">Paankse</h5>
+                     <p class="fs-6 text-dark main-font">
+                        Engineer and Designer
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div
+            class="container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center"
+         >
+            <div class="container-fluid col-md-7 m-0 p-0">
+               <!-- Logo -->
+               <div
+                  class="container-fluid d-flex justify-content-center align-items-center py-5"
+               >
+                  <a href="index.html">
+                     <img
+                        src="../assets/img/Profile/mfna logo.png"
+                        alt="MFNA Logo"
+                        style="width: 50px; height: auto"
+                     />
+                  </a>
+               </div>
+
+               <!-- Photo Galery -->
+               <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+               >
+                  <div
+                     id="carouselExampleSlidesOnly"
+                     class="carousel slide"
+                     data-bs-ride="carousel"
+                  >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                              src="../assets/portfolio/2_sign_ok/mockup.png"
+                              class="d-block w-100"
+                              alt="..."
+                              style="height: auto; width: auto"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Greeting -->
+               <div class="container-fluid">
+                  <h1 class="_sec-font text-dark my-5" style="overflow: hidden">
+                     Product Identification
+                  </h1>
+
+                  <table class="table">
+                     <tbody>
+                       <tr>
+                         <td>Client</td>
+                         <td>Quality Control in Factory (Same with Sub-cont Management)</td>
+                       </tr>
+                       <tr>
+                         <td>Sector</td>
+                         <td>Quality Production</td>
+                       </tr>
+                       <tr>
+                         <td>My Role</td>
+                         <td>Entire product conception and design</td>
+                       </tr>
+                       <tr>
+                         <!-- <th scope="row">4</th> -->
+                         <td>Project Time</td>
+                         <td>3 months</td>
+                       </tr>
+                     </tbody>
+                   </table>
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     Disclaimer   :   Based on the agreement I will not expose the factory name. 
+                     <br>
+                     <br>
+                     
+                  <p class="_sec-font fs-5 text-dark">
+                     This case has the same client as my last project about sub-cont management. This time, I make countermeasures for a quality problem issue that is causing Customer Claims for the Factory. 
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     This problem happens at the station after the product is assembled before it gets packaged. There is a station called “OK Packing” which is responsible for judging the product which is come from a lot of production lines match the product specification. The problem occurs because the is a miss judgment or wrong judgment on that station. Why is it happening? let’s dive deeper. 
+                  </p>
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learn The Case
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+                     Look at this process illustration
+                  </p>
+                  
+                  
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/Conventional Work Flow.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <p class="_sec-font fs-5 text-dark">
+                     This station has a super big job but the current process needs to have proper technical execution. My client also mentioned that the procedure standard is need to be reviewed again. The big problem is, there is no strong proof that the process is well executed, why?, Because determining the product is correct only depends on user memory and experience. To handle almost 800 product variants is so risky. Can you imagine that? and also that person is working his job in shift time not only in the day time.
+                  </p>
+                  <p class="_sec-font fs-5 text-dark">
+                     And now for this issue, my client proposes a specification that needs to be fulfilled, it is “we have to change the inspection process”. Ok, now what should we do next? fo course, get some data thru interviews and surveys.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     This case involved some factory sections which are :
+                  </p>
+                  
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">User as a Quality Inspection</li>
+                     <li class="list-group-item border-0">User as a Product Verificator</li>
+                     <li class="list-group-item border-0">Software developer sub-contractor</li>
+                  </ol>
+                  
+                  <p class="_sec-font fs-5 text-dark">
+                     This case involved some factory sections which are :
+                  </p>
+                  
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Finding from Interview and Survey
+                  </h3>
+                  
+                  
+                  <p class="_sec-font fs-5 text-dark">
+                     After the interview is conducted, I realize that I should find the technology of recognition by a camera that has a smart system, then it could be Artificial Intelligent of machine vision. But, how to implement it for my user? Let's see our personas below.
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/persona Fajar.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/Persona Sigit.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Cultivate Strong Roots of the concept
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     After the interview is conducted, I realize that I should find the technology of recognition by a camera that has a smart system, then it could be Artificial Intelligent of machine vision. But, how to implement it for my user? Let's see our personas below.
+
+                  </p>
+
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/New Flow Process.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     After the interview is conducted, I realize that I should find the technology of recognition by a camera that has a smart system, then it could be Artificial Intelligent of machine vision. But, how to implement it for my user? Let's see our personas below.
+
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/work flow.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Wireframing, Prototyping & Usability-Testing
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     The sequential work will be divided into 2 branches which are about :
+                  </p>
+
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">Normal Flow (for inspection)</li>
+                     <li class="list-group-item border-0">Teaching Flow (for teaching the machine learning model)</li>
+                  </ol>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     These 2 divided areas will be separated by who is using this app now. We talk about the regulation and the Standard of Operation of this new system. It is so important to register the user level to prevent big problems such as wring teaching for the model which will cause a really big problem for the machine learning technology.
+                  </p>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     These 2 divided areas will be separated by who is using this app now. We talk about the regulation and the Standard of Operation of this new system. It is so important to register the user level to prevent big problems such as wring teaching for the model which will cause a really big problem for the machine learning technology.
+
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/User journey Admin.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Mood Board plus Design System
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     I will refer to my previous mood board because it has the same client. Applying the factory culture will be the best option for smoothing the system transition. and make it consistent in the digital system.
+                  </p>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/Mood Board - 1.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                  class="container-fluid p-0 m-0 d-flex justify-content-center my-5"
+                  >
+                  <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                     >
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img
+                           src="../assets/portfolio/2_sign_ok/Mood Board - 2.png"
+                           class="d-block w-100"
+                           alt="..."
+                           style="height: auto; width: auto"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Iterating
+                  </h3>
+
+                  <p class="_sec-font fs-5 text-dark">
+                     After testing the prototype, there are some great suggestions from the user. Redesign the wireframe and test it again to the user for double check and make it more and more perfect.
+                     There is no to many iterations on this case because earlier test which is conducted help me to reduce the possibility of design changes.
+                  </p>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     What Next?
+
+                  </h3>
+
+
+                  <p class="_sec-font fs-5 text-dark">
+                     This is when I ask the system integrator or the software developer to make the design live. This area will be handled by the Factory IT section. But on my side there are some points that should be considered:
+                  </p>
+
+
+                  <ol class="list-group list-group-numbered _sec-font fs-5 text-dark my-3 border-0">
+                     <li class="list-group-item border-0">Integrating the system with an old ERP system</li>
+                     <li class="list-group-item border-0">Keep my KPI on maintaining the unsuccessful workflow</li>
+                     <li class="list-group-item border-0">Expanding the system for another building in the factory</li>
+                  </ol>
+                  
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Conclusion
+
+                  </h3>
+
+
+                  <p class="_sec-font fs-5 text-dark">
+                     In this case, a really big change is should be done. A big gap between user computing ability and the solution that should be implemented is a big and new experience for me. Bridging the gap is where the UX designer should be right? Keeping always put my user right at the front and center to prevent some bias in my design solution. 
+                  </p>
+
+                  <h3 class="_sec-font mt-5 mb-4 text-primary pt-5 pb-4" style="overflow: hidden">
+                     Learnings
+
+                  </h3>
+                  <p class="_sec-font fs-5 text-dark">
+
+                     In this case, I learned that a strong bridge does not only talk about the bridge material but there are a lot of considerations, surveys, planning, and reviews to make it work well and be safe for the users. Also with this case, I hope my bridge will deliver my user to their destination smoothly while enjoying the view hehe.
+
+#
+                  </p>
+
+
+               </div>
+               
+               
+               
+               <div class="container-fluid my-5 p-0">
+                  <a href="../portfolio.html" class="text-decoration-none fs-5 text-primary">Back to Portfolio Page</a>
+               </div>
+               
+               <!-- Footer -->
+               <div class="container-fluid m-0 p-0">
+                  <p>Copyright 2023 - Updated March 2023</p>
+               </div>
+            </div>
+         </div>
+         
+         <!-- Javascript Plugin -->
+         <!-- JQuery -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script
+      type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- LordIcon -->
+      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+      <!-- Customized JS -->
+      <script src="../js/script.js"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   </body>
+</html>
